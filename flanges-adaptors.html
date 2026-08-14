@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pipe Fittings & Accessories - India Steel Industries</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        line-height: 1.7;
+        color: #1a1a1a;
+        background: #fff;
+      }
+
+      /* Top Bar */
+      .top-bar {
+        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+        color: #fff;
+        padding: 12px 0;
+        font-size: 13px;
+      }
+
+      .top-bar .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .top-bar-left {
+        display: flex;
+        gap: 35px;
+        align-items: center;
+      }
+
+      .top-bar-left span {
+        opacity: 0.9;
+        letter-spacing: 0.3px;
+      }
+
+      .top-bar-right a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 30px;
+        font-weight: 500;
+        transition: color 0.3s;
+        letter-spacing: 0.5px;
+      }
+
+      .top-bar-right a:hover {
+        color: #B5222A;
+      }
+
+      /* Header */
+      header {
+        background: #fff;
+        border-bottom: 1px solid #e5e5e5;
+        padding: 25px 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
+      }
+
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+      }
+
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo-section {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
+
+      .logo-icon {
+        background: linear-gradient(135deg, #c91f2b 0%, #a91621 100%);
+        width: 55px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        font-weight: 800;
+        font-size: 22px;
+        color: #fff;
+        box-shadow: 0 4px 15px rgba(0, 51, 102, 0.3);
+      }
+
+      .logo-text h1 {
+        font-size: 26px;
+        font-weight: 800;
+        color: #0a0a0a;
+        letter-spacing: -0.5px;
+      }
+
+      .logo-text p {
+        font-size: 11px;
+        color: #666;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        margin-top: 2px;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 5px;
+      }
+
+      nav ul li a {
+        color: #1a1a1a;
+        text-decoration: none;
+        padding: 12px 24px;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        transition: all 0.3s;
+        border-radius: 8px;
+      }
+
+      nav ul li a:hover,
+      nav ul li a.active {
+        background: #c91f2b;
+        color: #fff;
+      }
+
+      /* Breadcrumb */
+      .breadcrumb {
+        background: #fafafa;
+        padding: 18px 0;
+        border-bottom: 1px solid #e5e5e5;
+      }
+
+      .breadcrumb-nav {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        font-size: 13px;
+      }
+
+      .breadcrumb-nav a {
+        color: #666;
+        text-decoration: none;
+        transition: color 0.3s;
+        font-weight: 500;
+      }
+
+      .breadcrumb-nav a:hover {
+        color: #c91f2b;
+      }
+
+      .breadcrumb-nav span {
+        color: #0a0a0a;
+        font-weight: 600;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+        padding: 80px 0;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(
+          circle at 50% 0%,
+          rgba(0, 51, 102, 0.3),
+          transparent 70%
+        );
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 1;
+      }
+
+      .hero h2 {
+        font-size: 48px;
+        font-weight: 800;
+        color: #fff;
+        margin-bottom: 20px;
+        letter-spacing: -1px;
+      }
+
+      .hero p {
+        font-size: 18px;
+        color: #ccc;
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.8;
+      }
+
+      /* Filter Section */
+      .filter-section {
+        background: #fafafa;
+        padding: 30px 0;
+        border-bottom: 1px solid #e5e5e5;
+        position: sticky;
+        top: 86px;
+        z-index: 99;
+      }
+
+      .filter-container {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .filter-label {
+        font-weight: 700;
+        color: #0a0a0a;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+
+      .filter-buttons {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        flex: 1;
+      }
+
+      .filter-btn {
+        background: #fff;
+        border: 2px solid #e5e5e5;
+        padding: 12px 28px;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 13px;
+        cursor: pointer;
+        transition: all 0.3s;
+        color: #666;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+
+      .filter-btn:hover {
+        border-color: #c91f2b;
+        color: #c91f2b;
+        background: #fff0f1;
+      }
+
+      .filter-btn.active {
+        background: #c91f2b;
+        color: #fff;
+        border-color: #c91f2b;
+      }
+
+      .search-box {
+        display: flex;
+        align-items: center;
+        background: #fff;
+        border: 2px solid #e5e5e5;
+        border-radius: 50px;
+        padding: 8px 20px;
+        min-width: 250px;
+        transition: border-color 0.3s;
+      }
+
+      .search-box:focus-within {
+        border-color: #c91f2b;
+      }
+
+      .search-box input {
+        border: none;
+        outline: none;
+        padding: 6px 10px;
+        font-size: 14px;
+        width: 100%;
+      }
+
+      .search-box span {
+        color: #999;
+      }
+
+      .results-count {
+        color: #666;
+        font-size: 15px;
+        margin-bottom: 30px;
+        font-weight: 500;
+      }
+
+      .hidden {
+        display: none !important;
+      }
+
+      /* Category Section */
+      .category-section {
+        padding: 80px 0;
+        background: #fff;
+      }
+
+      .section-header {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .section-header h2 {
+        font-size: 42px;
+        font-weight: 800;
+        color: #0a0a0a;
+        margin-bottom: 15px;
+        letter-spacing: -0.5px;
+      }
+
+      .section-header p {
+        font-size: 16px;
+        color: #666;
+        font-weight: 500;
+      }
+
+      .category-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+      }
+
+      .category-item {
+        background: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+        border: 2px solid transparent;
+      }
+
+      .category-item:hover {
+        transform: translateY(-12px);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        border-color: #c91f2b;
+      }
+
+      .category-item.selected {
+        border-color: #c91f2b;
+        box-shadow: 0 20px 60px rgba(0, 51, 102, 0.25);
+      }
+
+      .category-image {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        transition: transform 0.4s;
+      }
+
+      .category-item:hover .category-image {
+        transform: scale(1.05);
+      }
+
+      .category-info {
+        padding: 35px;
+      }
+
+      .category-badge {
+        display: inline-block;
+        background: #c91f2b;
+        color: #fff;
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+      }
+
+      .category-info h3 {
+        font-size: 22px;
+        font-weight: 700;
+        color: #0a0a0a;
+        margin-bottom: 12px;
+        letter-spacing: -0.3px;
+      }
+
+      .category-info p {
+        font-size: 15px;
+        color: #666;
+        line-height: 1.7;
+      }
+
+      /* Modal Styles */
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: 1000;
+        overflow-y: auto;
+        animation: fadeInModal 0.4s ease;
+      }
+
+      .modal.active {
+        display: block;
+      }
+
+      @keyframes fadeInModal {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideUp {
+        from {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      @keyframes shimmer {
+        0% {
+          background-position: -1000px 0;
+        }
+        100% {
+          background-position: 1000px 0;
+        }
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.7;
+        }
+      }
+
+      .modal-header {
+        background: linear-gradient(135deg, #0c0c0c 0%, #303338 100%);
+        padding: 40px 0;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        box-shadow: 0 8px 40px rgba(0, 51, 102, 0.4);
+      }
+
+      .modal-header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        animation: slideUp 0.6s ease;
+      }
+
+      .modal-header h2 {
+        font-size: 38px;
+        font-weight: 800;
+        color: #fff;
+        letter-spacing: -0.5px;
+      }
+
+      .close-button {
+        background: #3a3d42;
+        color: #f8f5f5;
+        border: none;
+        padding: 14px 32px;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all 0.3s;
+        letter-spacing: 0.5px;
+      }
+
+      .close-button:hover {
+        background: #c91f2b;
+        color: #fff;
+        transform: scale(1.05);
+      }
+
+      .modal-content {
+        padding: 60px 0 80px;
+        background: #ffffff;
+        position: relative;
+      }
+
+      .modal-content::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 300px;
+        background: radial-gradient(
+          ellipse at top,
+          rgba(0, 0, 0, 0.03),
+          transparent
+        );
+        pointer-events: none;
+      }
+
+      /* Content Sections with Scroll Animations */
+      .spec-section {
+        margin-bottom: 60px;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.6s ease-out;
+      }
+
+      .spec-section.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Specifications Content */
+      .spec-content {
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 50px;
+        box-shadow: 0 10px 40px rgba(0, 51, 102, 0.08);
+        border-left: 5px solid #c91f2b;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s ease;
+      }
+
+      .spec-content::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(0, 51, 102, 0.05),
+          transparent
+        );
+        transition: left 0.6s ease;
+      }
+
+      .spec-content:hover::before {
+        left: 100%;
+      }
+
+      .spec-content:hover {
+        box-shadow: 0 15px 50px rgba(0, 51, 102, 0.15);
+        transform: translateX(5px);
+      }
+
+      .spec-content h3 {
+        font-size: 32px;
+        font-weight: 800;
+        color: #c91f2b;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 3px solid #B5222A;
+        position: relative;
+        display: inline-block;
+      }
+
+      .spec-content h3::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background: #c91f2b;
+        transition: width 0.6s ease;
+      }
+
+      .spec-content:hover h3::after {
+        width: 100%;
+      }
+
+      .spec-content h4 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #c91f2b;
+        margin: 25px 0 15px;
+        padding-left: 20px;
+        border-left: 4px solid #B5222A;
+        position: relative;
+      }
+
+      .spec-content h4::before {
+        content: "⚙️";
+        position: absolute;
+        left: -30px;
+        animation: float 3s ease-in-out infinite;
+      }
+
+      .spec-content p {
+        font-size: 17px;
+        line-height: 1.9;
+        color: #495057;
+        margin-bottom: 20px;
+        text-align: justify;
+        position: relative;
+        padding-left: 25px;
+      }
+
+      .spec-content p::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 8px;
+        height: 8px;
+        background: #B5222A;
+        border-radius: 50%;
+        animation: pulse 2s ease-in-out infinite;
+      }
+
+      .spec-content p strong {
+        color: #c91f2b;
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      /* Feature Highlights */
+      .features-section {
+        background: linear-gradient(135deg, #edeeef 0%, #f9fafb 100%);
+        border-radius: 25px;
+        padding: 50px;
+        margin: 50px 0;
+        color: #060606;
+        box-shadow: 0 20px 60px rgba(7, 7, 7, 0.3);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .features-section::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        right: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(14, 13, 13, 0.1), transparent);
+        animation: float 8s ease-in-out infinite;
+      }
+
+      .features-section h3 {
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 30px;
+        color: #080808;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+
+      .feature-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .feature-box {
+        background: rgb(243, 242, 242);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 30px;
+        border: 2px solid rgba(10, 10, 10, 0.2);
+        transition: all 0.4s ease;
+      }
+
+      .feature-box:hover {
+        background: rgba(181, 34, 42, 0.18);
+        border-color: #B5222A;
+        transform: translateY(-5px);
+      }
+
+      .feature-box h4 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: #080808;
+      }
+
+      .feature-box h4::before {
+        content: attr(data-icon);
+        margin-right: 10px;
+      }
+
+      .feature-box p {
+        font-size: 16px;
+        line-height: 1.7;
+        color: rgba(4, 4, 4, 0.9);
+      }
+
+      /* Applications Tags */
+      .applications-section {
+        margin: 50px 0;
+      }
+
+      .applications-section h3 {
+        font-size: 32px;
+        font-weight: 800;
+        color: #c91f2b;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      /* Divider Line */
+      .divider {
+        height: 3px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          #c91f2b,
+          #B5222A,
+          #c91f2b,
+          transparent
+        );
+        margin: 50px 0;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .divider::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.8),
+          transparent
+        );
+        animation: shimmer 3s infinite;
+      }
+
+      /* Scroll Progress Bar */
+      .scroll-progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 4px;
+        background: linear-gradient(90deg, #c91f2b, #B5222A);
+        z-index: 1001;
+        transition: width 0.1s ease;
+      }
+
+      /* Applications Image Grid */
+      .app-images-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+        margin-top: 40px;
+      }
+
+      .app-image-card {
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        height: 280px;
+        cursor: pointer;
+        border: 2px solid #e0e0e0;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 0.6s ease-out backwards;
+      }
+
+      .app-image-card:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .app-image-card:nth-child(2) {
+        animation-delay: 0.15s;
+      }
+      .app-image-card:nth-child(3) {
+        animation-delay: 0.2s;
+      }
+      .app-image-card:nth-child(4) {
+        animation-delay: 0.25s;
+      }
+      .app-image-card:nth-child(5) {
+        animation-delay: 0.3s;
+      }
+      .app-image-card:nth-child(6) {
+        animation-delay: 0.35s;
+      }
+      .app-image-card:nth-child(7) {
+        animation-delay: 0.4s;
+      }
+      .app-image-card:nth-child(8) {
+        animation-delay: 0.45s;
+      }
+
+      .app-image-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        border-color: #c91f2b;
+      }
+
+      .app-image-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+      }
+
+      .app-image-card:hover img {
+        transform: scale(1.1);
+      }
+
+      .app-image-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.95) 0%,
+          rgba(0, 0, 0, 0.7) 60%,
+          transparent 100%
+        );
+        padding: 25px;
+        transform: translateY(0);
+        transition: all 0.4s ease;
+      }
+
+      .app-image-card:hover .app-image-overlay {
+        background: linear-gradient(
+          to top,
+          rgba(0, 51, 102, 0.95) 0%,
+          rgba(0, 51, 102, 0.8) 60%,
+          transparent 100%
+        );
+      }
+
+      .app-image-overlay h4 {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0;
+        letter-spacing: 0.5px;
+      }
+
+      /* Configuration Row Layout */
+      .config-row {
+        display: grid;
+        grid-template-columns: 1fr 380px;
+        gap: 40px;
+        align-items: center;
+        margin: 40px 0;
+        padding: 30px 0;
+        border-bottom: 1px solid #e0e0e0;
+      }
+
+      .config-row:last-of-type {
+        border-bottom: none;
+      }
+
+      .config-row.reverse {
+        grid-template-columns: 380px 1fr;
+      }
+
+      .config-text {
+        order: 1;
+      }
+
+      .config-row.reverse .config-text {
+        order: 2;
+      }
+
+      .config-image {
+        order: 2;
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        border: 2px solid #e0e0e0;
+        transition: all 0.4s ease;
+        height: 320px;
+      }
+
+      .config-row.reverse .config-image {
+        order: 1;
+      }
+
+      .config-image:hover {
+        border-color: #c91f2b;
+        box-shadow: 0 15px 40px rgba(0, 51, 102, 0.25);
+        transform: translateY(-5px);
+      }
+
+      .config-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+      }
+
+      .config-image:hover img {
+        transform: scale(1.08);
+      }
+
+      /* Footer */
+      footer {
+        background: #0a0a0a;
+        color: #ccc;
+        padding: 60px 0 30px;
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        margin-bottom: 40px;
+      }
+
+      .footer-col h3 {
+        color: #B5222A;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        letter-spacing: 0.5px;
+      }
+
+      .footer-col p {
+        font-size: 14px;
+        line-height: 1.8;
+        color: #999;
+      }
+
+      .footer-col ul {
+        list-style: none;
+      }
+
+      .footer-col ul li {
+        margin-bottom: 10px;
+      }
+
+      .footer-col ul li a {
+        color: #999;
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s;
+      }
+
+      .footer-col ul li a:hover {
+        color: #B5222A;
+      }
+
+      .footer-bottom {
+        text-align: center;
+        padding-top: 30px;
+        border-top: 1px solid #222;
+        color: #666;
+        font-size: 13px;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 1024px) {
+        .config-row,
+        .config-row.reverse {
+          grid-template-columns: 1fr;
+          gap: 25px;
+        }
+
+        .config-text,
+        .config-row.reverse .config-text {
+          order: 1;
+        }
+
+        .config-image,
+        .config-row.reverse .config-image {
+          order: 2;
+        }
+
+        .config-image {
+          height: 280px;
+        }
+
+        .app-images-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .category-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .footer-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .app-images-grid,
+        .category-grid,
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .config-image {
+          height: 240px;
+        }
+
+        .hero h2 {
+          font-size: 36px;
+        }
+
+        nav ul {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .filter-container {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .search-box {
+          width: 100%;
+        }
+
+        .feature-row {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+      <link rel="stylesheet" href="enhancements.css" />
+      <style>
+      /* ---- Product Detail Page (Read More target pages) ---- */
+      .pd-section {
+        padding: 50px 0 70px;
+        background: #fff;
+      }
+      .pd-title {
+        font-size: 30px;
+        font-weight: 800;
+        color: #0a0a0a;
+        margin-bottom: 30px;
+        letter-spacing: -0.5px;
+      }
+      .pd-layout {
+        display: grid;
+        grid-template-columns: 1fr 320px;
+        gap: 45px;
+        align-items: start;
+      }
+      .pd-main {
+        min-width: 0;
+      }
+      .pd-image-box {
+        width: 260px;
+        border: 2px solid #c91f2b;
+        border-radius: 8px;
+        padding: 14px;
+        margin-bottom: 30px;
+        background: #fafafa;
+      }
+      .pd-image-box img {
+        width: 100%;
+        display: block;
+        border-radius: 4px;
+      }
+      .pd-main h3 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #c91f2b;
+        margin: 30px 0 14px;
+      }
+      .pd-main h3:first-of-type {
+        margin-top: 0;
+      }
+      .pd-main p {
+        font-size: 15px;
+        color: #333;
+        margin-bottom: 14px;
+        line-height: 1.8;
+      }
+      .pd-main p strong {
+        color: #0a0a0a;
+      }
+      .pd-specs-list {
+        list-style: none;
+        margin: 10px 0 0;
+        padding: 0;
+      }
+      .pd-specs-list li {
+        position: relative;
+        padding: 8px 0 8px 26px;
+        font-size: 15px;
+        color: #333;
+        border-bottom: 1px dashed #e5e5e5;
+      }
+      .pd-specs-list li::before {
+        content: "▸";
+        position: absolute;
+        left: 0;
+        top: 8px;
+        color: #c91f2b;
+        font-weight: 800;
+      }
+      .pd-specs-list li strong {
+        color: #0a0a0a;
+        font-weight: 700;
+      }
+      .pd-apps-list {
+        list-style: none;
+        margin: 10px 0 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4px 20px;
+      }
+      .pd-apps-list li {
+        position: relative;
+        padding: 6px 0 6px 22px;
+        font-size: 14px;
+        color: #333;
+      }
+      .pd-apps-list li::before {
+        content: "▸";
+        position: absolute;
+        left: 0;
+        color: #c91f2b;
+        font-weight: 800;
+      }
+      .pd-cta-row {
+        margin-top: 35px;
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+      .pd-cta-row a {
+        display: inline-block;
+        padding: 13px 28px;
+        border-radius: 6px;
+        font-weight: 700;
+        font-size: 14px;
+        text-decoration: none;
+        letter-spacing: 0.3px;
+      }
+      .pd-cta-primary {
+        background: #c91f2b;
+        color: #fff;
+      }
+      .pd-cta-primary:hover {
+        background: #303338;
+      }
+      .pd-cta-secondary {
+        background: #fff;
+        color: #c91f2b;
+        border: 2px solid #c91f2b;
+      }
+      .pd-cta-secondary:hover {
+        background: #f4f5f6;
+      }
+
+      /* ---- Quick Links Sidebar ---- */
+      .pd-sidebar {
+        position: sticky;
+        top: 100px;
+      }
+      .pd-sidebar-title {
+        font-size: 15px;
+        font-weight: 800;
+        color: #0a0a0a;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        padding-bottom: 10px;
+        border-bottom: 3px solid #c91f2b;
+        margin-bottom: 14px;
+      }
+      .pd-sidebar-links {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        max-height: 640px;
+        overflow-y: auto;
+        padding-right: 4px;
+      }
+      .pd-sidebar-links a {
+        display: block;
+        background: #c91f2b;
+        color: #fff;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 600;
+        padding: 11px 16px;
+        border-radius: 4px;
+        transition: background 0.2s;
+      }
+      .pd-sidebar-links a:hover,
+      .pd-sidebar-links a.current {
+        background: #B5222A;
+        color: #0a0a0a;
+      }
+
+      @media (max-width: 900px) {
+        .pd-layout {
+          grid-template-columns: 1fr;
+        }
+        .pd-sidebar {
+          position: static;
+        }
+        .pd-apps-list {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* ---- Listing page: image + name + Read More card (India Steel Industries style) ---- */
+      .pf-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 26px;
+      }
+      .pf-card {
+        border: 2px solid #e5e5e5;
+        border-radius: 8px;
+        background: #fff;
+        text-align: center;
+        padding: 20px 18px 24px;
+        transition: all 0.25s;
+      }
+      .pf-card:hover {
+        border-color: #c91f2b;
+        box-shadow: 0 10px 30px rgba(0, 51, 102, 0.12);
+        transform: translateY(-4px);
+      }
+      .pf-card img {
+        width: 100%;
+        height: 190px;
+        object-fit: cover;
+        border-radius: 4px;
+        margin-bottom: 16px;
+      }
+      .pf-card h3 {
+        font-size: 16px;
+        font-weight: 700;
+        color: #0a0a0a;
+        margin-bottom: 16px;
+        min-height: 40px;
+      }
+      .pf-card .pf-badge {
+        display: inline-block;
+        font-size: 11px;
+        font-weight: 700;
+        color: #c91f2b;
+        background: #f4f5f6;
+        padding: 4px 12px;
+        border-radius: 20px;
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+        margin-bottom: 10px;
+      }
+      .pf-card .pf-readmore {
+        display: inline-block;
+        background: #c91f2b;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 13px;
+        padding: 10px 26px;
+        border-radius: 4px;
+        transition: background 0.2s;
+      }
+      .pf-card .pf-readmore:hover {
+        background: #B5222A;
+        color: #0a0a0a;
+      }
+      .pf-intro {
+        max-width: 900px;
+        margin: 0 auto 40px;
+        text-align: center;
+        color: #444;
+        font-size: 15.5px;
+        line-height: 1.8;
+      }
+    </style>
+
+  <link rel="stylesheet" href="af-theme.css">
+  <link rel="stylesheet" href="product-redesign.css">
+</head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-left">
+          <span>📧 info@indiasteelind.com</span>
+          <span>📞 +91 22 4567 8900</span>
+        </div>
+        <div class="top-bar-right">
+          <a href="#quote">Get Quote</a>
+          <a href="index.html#contact">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo-section">
+            <div class="logo-icon">ISI</div>
+            <div class="logo-text">
+              <h1>INDIA STEEL INDUSTRIES</h1>
+              <p>Quality Steel Solutions Since 1998</p>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#about">About Us</a></li>
+              <li><a href="index.html#products" class="active">Products</a></li>
+              <li><a href="index.html#features">Why Choose Us</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+<section class="product-hero" style='background-image:linear-gradient(90deg,rgba(20,24,28,.62),rgba(20,24,28,.24),rgba(20,24,28,.62)),url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQRDnOFq94-UrwICQNfVtg20NXtFALGgAB6cU7OGf8nmd5zUEadKAshdk&amp;s=10") !important;'><div class="product-hero-content"><h1>Flanges &amp; Adaptors</h1><p>Precision-engineered industrial product for demanding piping and process applications.</p></div></section>
+
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+      <div class="container">
+        <div class="breadcrumb-nav">
+          <a href="index.html">Home</a>
+          <span>›</span>
+          <a href="pipe-fittings-accessories.html">Pipe Fittings & Accessories</a>
+          <span>›</span>
+          <span>Flanges & Adaptors</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="pd-section">
+      <div class="container">
+        <h1 class="pd-title">Flanges & Adaptors Manufacturer and Stockist</h1>
+        <div class="pd-layout">
+          <div class="pd-main">
+            <div class="pd-image-box">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQRDnOFq94-UrwICQNfVtg20NXtFALGgAB6cU7OGf8nmd5zUEadKAshdk&s=10" alt="Flanges & Adaptors" />
+            </div>
+
+            <h3>What is Flanges & Adaptors?</h3>
+            <p>Flanges (weld neck, slip-on, socket weld, blind) and pipe adaptors provide bolted, serviceable connections between pipe sections and equipment. India Steel Industries manufactures flanges as per ASME B16.5 and ASME B16.47 across a wide pressure class range.</p>
+
+            <h3>More Details of the Product</h3>
+            <p>India Steel Industries is one of the leading Manufacturer and Stockist of Flanges & Adaptors in Kolkata, West Bengal, Odisha, Chhattisgarh, Assam, Andhra Pradesh, Hyderabad, Telangana, Chennai, Uttar Pradesh, Bihar, and Ahmedabad, Gujarat. We supply flanges across all standard pressure classes with raised face and flat face options, machined to specification at a competitive price.</p>
+
+            <h3>Specifications of Flanges & Adaptors</h3>
+            <ul class="pd-specs-list">
+              <li><strong>Standard:</strong> Carbon Steel ASME B16.5 Flange | Stainless Steel ASME B16.47 Flange</li><li><strong>Size:</strong> 1/2" NB TO 48" NB</li><li><strong>Class:</strong> 150#, 300#, 600#, 900#, 1500#, 2500#</li><li><strong>Type:</strong> Weld Neck, Slip-On, Socket Weld, Blind</li><li><strong>Form:</strong> Raised Face (RF), Flat Face (FF), Ring Type Joint (RTJ)</li><li><strong>Value Added Services:</strong> Hot Dipped Galvanizing, Facing, Drilling</li><li><strong>Production Grade:</strong> Carbon Steel, Stainless Steel, Alloy Steel</li>
+            </ul>
+
+            <h3>Applications</h3>
+            <ul class="pd-apps-list">
+              <li>Oil & Gas Industries</li><li>Petrochemical Plants</li><li>Water Supply & Treatment Systems</li><li>Power Generation Units</li><li>Construction & Infrastructure Projects</li><li>Equipment Nozzles</li>
+            </ul>
+            <div class="applications-section" style="margin:40px 0 0;">
+              <h3 style="text-align:left; font-size:24px; margin-bottom:20px;">In Production &amp; On Site</h3>
+              <div class="app-images-grid" style="grid-template-columns: repeat(3, 1fr);">
+              <div class="app-image-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQRDnOFq94-UrwICQNfVtg20NXtFALGgAB6cU7OGf8nmd5zUEadKAshdk&amp;s=10" alt="Precision Welding &amp; Fabrication" loading="lazy" />
+                <div class="app-image-overlay"><h4>Precision Welding &amp; Fabrication</h4></div>
+              </div>
+              <div class="app-image-card">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2022/7/IZ/DV/BT/20626615/stainless-steel-cross-tee-500x500.jpg" alt="Quality-Controlled Manufacturing" loading="lazy" />
+                <div class="app-image-overlay"><h4>Quality-Controlled Manufacturing</h4></div>
+              </div>
+              <div class="app-image-card">
+                <img src="https://www.ltdpipeline.com/wp-content/uploads/2024/11/Steel-Butt-Weld-Reducer.jpg" alt="Ready for Site Installation" loading="lazy" />
+                <div class="app-image-overlay"><h4>Ready for Site Installation</h4></div>
+              </div>
+              </div>
+            </div>
+
+
+            <div class="pd-cta-row">
+              <a href="index.html#contact" class="pd-cta-primary">Get a Quote →</a>
+              <a href="pipe-fittings-accessories.html" class="pd-cta-secondary">← Back to Pipe Fittings</a>
+            </div>
+          </div>
+
+          <aside class="pd-sidebar">
+            <div class="pd-sidebar-title">Quick Links</div>
+            <div class="pd-sidebar-links">
+              <a href="elbows.html">Elbows (90° & 45°)</a><a href="tees-crosses.html">Tees & Crosses</a><a href="reducers.html">Reducers (Concentric & Eccentric)</a><a href="couplings-unions.html">Couplings & Unions</a><a href="caps-plugs.html">Caps & Plugs</a><a href="nipples-bushings.html">Nipples & Bushings</a><a href="flanges-adaptors.html" class="current">Flanges & Adaptors</a><a href="socket-weld-tee.html">Socket Weld Tee</a><a href="forged-cross-tee.html">Forged Cross Tee</a><a href="long-screw.html">Long Screw Pipe Fittings</a><a href="olets.html">Weldolet / Sockolet / Threadolet</a><a href="stub-ends.html">Stub Ends (Lap Joint)</a><a href="u-bend.html">U Bend Pipe Fittings</a><a href="bend-fittings.html">Bend Fittings (3D / 5D)</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <div class="float-actions">
+      <a class="float-btn float-whatsapp" href="https://wa.me/910000000000" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+      <button class="float-btn float-top" aria-label="Back to top">↑</button>
+    </div>
+    <footer><div class="container footer-top"><div class="footer-brand"><div class="logo"><span class="logo-mark">IS</span><span class="logo-text"><span class="full">ISI Steel</span><span class="sub">India Steel Industries</span></span></div><p>Manufacturer and stockist of steel pipes, structural sections, sheets, fittings and fabrication services, supplying contractors and industry across India.</p></div><div class="footer-col"><h5>Products</h5><ul><li><a href="SteelPipes.html">Steel Pipes &amp; Tubes</a></li><li><a href="StructuralSteel.html">Structural Sections</a></li><li><a href="SheetsPlates.html">Sheets &amp; Plates</a></li><li><a href="PipeFittings.html">Pipe Fittings</a></li><li><a href="Valves.html">Valves</a></li></ul></div><div class="footer-col"><h5>Company</h5><ul><li><a href="index.html#about">About Us</a></li><li><a href="index.html#features">Why Choose Us</a></li><li><a href="index.html#contact">Contact Sales</a></li></ul></div><div class="footer-col"><h5>Contact</h5><ul><li><a href="tel:+912245678900">+91 22 4567 8900</a></li><li><a href="mailto:info@indiasteelind.com">info@indiasteelind.com</a></li><li><a href="https://maps.google.com">MIDC, Mumbai, India</a></li></ul></div></div><div class="container footer-bottom"><span>© 2026 India Steel Industries. All rights reserved.</span><span><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of Trade</a></span></div></footer>
+    <script src="enhancements.js" defer></script>
+</body>
+</html>

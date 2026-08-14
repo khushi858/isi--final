@@ -1,0 +1,1169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hardware & Fasteners - India Steel Industries</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          "Inter",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        line-height: 1.7;
+        color: #1a1a1a;
+        background: #fff;
+      }
+
+      /* Top Bar */
+      .top-bar {
+        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+        color: #fff;
+        padding: 12px 0;
+        font-size: 13px;
+      }
+
+      .top-bar .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .top-bar-left {
+        display: flex;
+        gap: 35px;
+        align-items: center;
+      }
+
+      .top-bar-left span {
+        opacity: 0.9;
+        letter-spacing: 0.3px;
+      }
+
+      .top-bar-right a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 30px;
+        font-weight: 500;
+        transition: color 0.3s;
+        letter-spacing: 0.5px;
+      }
+
+      .top-bar-right a:hover {
+        color: #c91f2b;
+      }
+
+      /* Header */
+      header {
+        background: #fff;
+        border-bottom: 1px solid #e5e5e5;
+        padding: 25px 0;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
+      }
+
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+      }
+
+      .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo-section {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
+
+      .logo-icon {
+        background: linear-gradient(135deg, #c91f2b 0%, #a91621 100%);
+        width: 55px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        font-weight: 800;
+        font-size: 22px;
+        color: #fff;
+        box-shadow: 0 4px 15px rgba(0, 51, 102, 0.3);
+      }
+
+      .logo-text h1 {
+        font-size: 26px;
+        font-weight: 800;
+        color: #0a0a0a;
+        letter-spacing: -0.5px;
+      }
+
+      .logo-text p {
+        font-size: 11px;
+        color: #666;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        margin-top: 2px;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 5px;
+      }
+
+      nav ul li a {
+        color: #1a1a1a;
+        text-decoration: none;
+        padding: 12px 24px;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        transition: all 0.3s;
+        border-radius: 8px;
+      }
+
+      nav ul li a:hover,
+      nav ul li a.active {
+        background: #c91f2b;
+        color: #fff;
+      }
+
+      /* Breadcrumb */
+      .breadcrumb {
+        background: #fafafa;
+        padding: 18px 0;
+        border-bottom: 1px solid #e5e5e5;
+      }
+
+      .breadcrumb-nav {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        font-size: 13px;
+      }
+
+      .breadcrumb-nav a {
+        color: #666;
+        text-decoration: none;
+        transition: color 0.3s;
+        font-weight: 500;
+      }
+
+      .breadcrumb-nav a:hover {
+        color: #c91f2b;
+      }
+
+      .breadcrumb-nav span {
+        color: #0a0a0a;
+        font-weight: 600;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+        padding: 80px 0;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(
+          circle at 50% 0%,
+          rgba(0, 51, 102, 0.3),
+          transparent 70%
+        );
+      }
+
+      .hero-content {
+        position: relative;
+        z-index: 1;
+      }
+
+      .hero h2 {
+        font-size: 48px;
+        font-weight: 800;
+        color: #fff;
+        margin-bottom: 20px;
+        letter-spacing: -1px;
+      }
+
+      .hero p {
+        font-size: 18px;
+        color: #ccc;
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.8;
+      }
+
+      /* Filter Section */
+      .filter-section {
+        background: #fafafa;
+        padding: 30px 0;
+        border-bottom: 1px solid #e5e5e5;
+        position: sticky;
+        top: 86px;
+        z-index: 99;
+      }
+
+      .filter-container {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .filter-label {
+        font-weight: 700;
+        color: #0a0a0a;
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+
+      .filter-buttons {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        flex: 1;
+      }
+
+      .filter-btn {
+        background: #fff;
+        border: 2px solid #e5e5e5;
+        padding: 12px 28px;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 13px;
+        cursor: pointer;
+        transition: all 0.3s;
+        color: #666;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+
+      .filter-btn:hover {
+        border-color: #c91f2b;
+        color: #c91f2b;
+        background: #fff0f1;
+      }
+
+      .filter-btn.active {
+        background: #c91f2b;
+        color: #fff;
+        border-color: #c91f2b;
+      }
+
+      .search-box {
+        display: flex;
+        align-items: center;
+        background: #fff;
+        border: 2px solid #e5e5e5;
+        border-radius: 50px;
+        padding: 8px 20px;
+        min-width: 250px;
+        transition: border-color 0.3s;
+      }
+
+      .search-box:focus-within {
+        border-color: #c91f2b;
+      }
+
+      .search-box input {
+        border: none;
+        outline: none;
+        padding: 6px 10px;
+        font-size: 14px;
+        width: 100%;
+      }
+
+      .search-box span {
+        color: #999;
+      }
+
+      .results-count {
+        color: #666;
+        font-size: 15px;
+        margin-bottom: 30px;
+        font-weight: 500;
+      }
+
+      .hidden {
+        display: none !important;
+      }
+
+      /* Category Section */
+      .category-section {
+        padding: 80px 0;
+        background: #fff;
+      }
+
+      .section-header {
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .section-header h2 {
+        font-size: 42px;
+        font-weight: 800;
+        color: #0a0a0a;
+        margin-bottom: 15px;
+        letter-spacing: -0.5px;
+      }
+
+      .section-header p {
+        font-size: 16px;
+        color: #666;
+        font-weight: 500;
+      }
+
+      .category-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+      }
+
+      .category-item {
+        background: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+        border: 2px solid transparent;
+      }
+
+      .category-item:hover {
+        transform: translateY(-12px);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        border-color: #c91f2b;
+      }
+
+      .category-item.selected {
+        border-color: #c91f2b;
+        box-shadow: 0 20px 60px rgba(0, 51, 102, 0.25);
+      }
+
+      .category-image {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        transition: transform 0.4s;
+      }
+
+      .category-item:hover .category-image {
+        transform: scale(1.05);
+      }
+
+      .category-info {
+        padding: 35px;
+      }
+
+      .category-badge {
+        display: inline-block;
+        background: #c91f2b;
+        color: #fff;
+        padding: 6px 14px;
+        border-radius: 20px;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+      }
+
+      .category-info h3 {
+        font-size: 22px;
+        font-weight: 700;
+        color: #0a0a0a;
+        margin-bottom: 12px;
+        letter-spacing: -0.3px;
+      }
+
+      .category-info p {
+        font-size: 15px;
+        color: #666;
+        line-height: 1.7;
+      }
+
+      /* Modal Styles */
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        z-index: 1000;
+        overflow-y: auto;
+        animation: fadeInModal 0.4s ease;
+      }
+
+      .modal.active {
+        display: block;
+      }
+
+      @keyframes fadeInModal {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideUp {
+        from {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      @keyframes shimmer {
+        0% {
+          background-position: -1000px 0;
+        }
+        100% {
+          background-position: 1000px 0;
+        }
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.7;
+        }
+      }
+
+      .modal-header {
+        background: linear-gradient(135deg, #0c0c0c 0%, #303338 100%);
+        padding: 40px 0;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        box-shadow: 0 8px 40px rgba(0, 51, 102, 0.4);
+      }
+
+      .modal-header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        animation: slideUp 0.6s ease;
+      }
+
+      .modal-header h2 {
+        font-size: 38px;
+        font-weight: 800;
+        color: #fff;
+        letter-spacing: -0.5px;
+      }
+
+      .close-button {
+        background: #3a3d42;
+        color: #f8f5f5;
+        border: none;
+        padding: 14px 32px;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 15px;
+        cursor: pointer;
+        transition: all 0.3s;
+        letter-spacing: 0.5px;
+      }
+
+      .close-button:hover {
+        background: #c91f2b;
+        color: #fff;
+        transform: scale(1.05);
+      }
+
+      .modal-content {
+        padding: 60px 0 80px;
+        background: #ffffff;
+        position: relative;
+      }
+
+      .modal-content::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 300px;
+        background: radial-gradient(
+          ellipse at top,
+          rgba(0, 0, 0, 0.03),
+          transparent
+        );
+        pointer-events: none;
+      }
+
+      /* Content Sections with Scroll Animations */
+      .spec-section {
+        margin-bottom: 60px;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.6s ease-out;
+      }
+
+      .spec-section.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Specifications Content */
+      .spec-content {
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 50px;
+        box-shadow: 0 10px 40px rgba(0, 51, 102, 0.08);
+        border-left: 5px solid #c91f2b;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s ease;
+      }
+
+      .spec-content::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(0, 51, 102, 0.05),
+          transparent
+        );
+        transition: left 0.6s ease;
+      }
+
+      .spec-content:hover::before {
+        left: 100%;
+      }
+
+      .spec-content:hover {
+        box-shadow: 0 15px 50px rgba(0, 51, 102, 0.15);
+        transform: translateX(5px);
+      }
+
+      .spec-content h3 {
+        font-size: 32px;
+        font-weight: 800;
+        color: #c91f2b;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 3px solid #c91f2b;
+        position: relative;
+        display: inline-block;
+      }
+
+      .spec-content h3::after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 3px;
+        background: #c91f2b;
+        transition: width 0.6s ease;
+      }
+
+      .spec-content:hover h3::after {
+        width: 100%;
+      }
+
+      .spec-content h4 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #c91f2b;
+        margin: 25px 0 15px;
+        padding-left: 20px;
+        border-left: 4px solid #c91f2b;
+        position: relative;
+      }
+
+      .spec-content h4::before {
+        content: "⚙️";
+        position: absolute;
+        left: -30px;
+        animation: float 3s ease-in-out infinite;
+      }
+
+      .spec-content p {
+        font-size: 17px;
+        line-height: 1.9;
+        color: #495057;
+        margin-bottom: 20px;
+        text-align: justify;
+        position: relative;
+        padding-left: 25px;
+      }
+
+      .spec-content p::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 8px;
+        height: 8px;
+        background: #c91f2b;
+        border-radius: 50%;
+        animation: pulse 2s ease-in-out infinite;
+      }
+
+      .spec-content p strong {
+        color: #c91f2b;
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      /* Feature Highlights */
+      .features-section {
+        background: linear-gradient(135deg, #edeeef 0%, #f9fafb 100%);
+        border-radius: 25px;
+        padding: 50px;
+        margin: 50px 0;
+        color: #060606;
+        box-shadow: 0 20px 60px rgba(7, 7, 7, 0.3);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .features-section::before {
+        content: "";
+        position: absolute;
+        top: -50%;
+        right: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(14, 13, 13, 0.1), transparent);
+        animation: float 8s ease-in-out infinite;
+      }
+
+      .features-section h3 {
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 30px;
+        color: #080808;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+
+      .feature-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .feature-box {
+        background: rgb(243, 242, 242);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 30px;
+        border: 2px solid rgba(10, 10, 10, 0.2);
+        transition: all 0.4s ease;
+      }
+
+      .feature-box:hover {
+        background: rgba(245, 158, 11, 0.2);
+        border-color: #c91f2b;
+        transform: translateY(-5px);
+      }
+
+      .feature-box h4 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        color: #080808;
+      }
+
+      .feature-box h4::before {
+        content: attr(data-icon);
+        margin-right: 10px;
+      }
+
+      .feature-box p {
+        font-size: 16px;
+        line-height: 1.7;
+        color: rgba(4, 4, 4, 0.9);
+      }
+
+      /* Applications Tags */
+      .applications-section {
+        margin: 50px 0;
+      }
+
+      .applications-section h3 {
+        font-size: 32px;
+        font-weight: 800;
+        color: #c91f2b;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      /* Divider Line */
+      .divider {
+        height: 3px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          #c91f2b,
+          #c91f2b,
+          #c91f2b,
+          transparent
+        );
+        margin: 50px 0;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .divider::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.8),
+          transparent
+        );
+        animation: shimmer 3s infinite;
+      }
+
+      /* Scroll Progress Bar */
+      .scroll-progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 4px;
+        background: linear-gradient(90deg, #c91f2b, #c91f2b);
+        z-index: 1001;
+        transition: width 0.1s ease;
+      }
+
+      /* Applications Image Grid */
+      .app-images-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+        margin-top: 40px;
+      }
+
+      .app-image-card {
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        height: 280px;
+        cursor: pointer;
+        border: 2px solid #e0e0e0;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 0.6s ease-out backwards;
+      }
+
+      .app-image-card:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .app-image-card:nth-child(2) {
+        animation-delay: 0.15s;
+      }
+      .app-image-card:nth-child(3) {
+        animation-delay: 0.2s;
+      }
+      .app-image-card:nth-child(4) {
+        animation-delay: 0.25s;
+      }
+      .app-image-card:nth-child(5) {
+        animation-delay: 0.3s;
+      }
+      .app-image-card:nth-child(6) {
+        animation-delay: 0.35s;
+      }
+      .app-image-card:nth-child(7) {
+        animation-delay: 0.4s;
+      }
+      .app-image-card:nth-child(8) {
+        animation-delay: 0.45s;
+      }
+
+      .app-image-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        border-color: #c91f2b;
+      }
+
+      .app-image-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+      }
+
+      .app-image-card:hover img {
+        transform: scale(1.1);
+      }
+
+      .app-image-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.95) 0%,
+          rgba(0, 0, 0, 0.7) 60%,
+          transparent 100%
+        );
+        padding: 25px;
+        transform: translateY(0);
+        transition: all 0.4s ease;
+      }
+
+      .app-image-card:hover .app-image-overlay {
+        background: linear-gradient(
+          to top,
+          rgba(0, 51, 102, 0.95) 0%,
+          rgba(0, 51, 102, 0.8) 60%,
+          transparent 100%
+        );
+      }
+
+      .app-image-overlay h4 {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0;
+        letter-spacing: 0.5px;
+      }
+
+      /* Configuration Row Layout */
+      .config-row {
+        display: grid;
+        grid-template-columns: 1fr 380px;
+        gap: 40px;
+        align-items: center;
+        margin: 40px 0;
+        padding: 30px 0;
+        border-bottom: 1px solid #e0e0e0;
+      }
+
+      .config-row:last-of-type {
+        border-bottom: none;
+      }
+
+      .config-row.reverse {
+        grid-template-columns: 380px 1fr;
+      }
+
+      .config-text {
+        order: 1;
+      }
+
+      .config-row.reverse .config-text {
+        order: 2;
+      }
+
+      .config-image {
+        order: 2;
+        position: relative;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        border: 2px solid #e0e0e0;
+        transition: all 0.4s ease;
+        height: 320px;
+      }
+
+      .config-row.reverse .config-image {
+        order: 1;
+      }
+
+      .config-image:hover {
+        border-color: #c91f2b;
+        box-shadow: 0 15px 40px rgba(0, 51, 102, 0.25);
+        transform: translateY(-5px);
+      }
+
+      .config-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+      }
+
+      .config-image:hover img {
+        transform: scale(1.08);
+      }
+
+      /* Footer */
+      footer {
+        background: #0a0a0a;
+        color: #ccc;
+        padding: 60px 0 30px;
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        margin-bottom: 40px;
+      }
+
+      .footer-col h3 {
+        color: #c91f2b;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        letter-spacing: 0.5px;
+      }
+
+      .footer-col p {
+        font-size: 14px;
+        line-height: 1.8;
+        color: #999;
+      }
+
+      .footer-col ul {
+        list-style: none;
+      }
+
+      .footer-col ul li {
+        margin-bottom: 10px;
+      }
+
+      .footer-col ul li a {
+        color: #999;
+        text-decoration: none;
+        font-size: 14px;
+        transition: color 0.3s;
+      }
+
+      .footer-col ul li a:hover {
+        color: #c91f2b;
+      }
+
+      .footer-bottom {
+        text-align: center;
+        padding-top: 30px;
+        border-top: 1px solid #222;
+        color: #666;
+        font-size: 13px;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 1024px) {
+        .config-row,
+        .config-row.reverse {
+          grid-template-columns: 1fr;
+          gap: 25px;
+        }
+
+        .config-text,
+        .config-row.reverse .config-text {
+          order: 1;
+        }
+
+        .config-image,
+        .config-row.reverse .config-image {
+          order: 2;
+        }
+
+        .config-image {
+          height: 280px;
+        }
+
+        .app-images-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .category-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .footer-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .app-images-grid,
+        .category-grid,
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .config-image {
+          height: 240px;
+        }
+
+        .hero h2 {
+          font-size: 36px;
+        }
+
+        nav ul {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .filter-container {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .search-box {
+          width: 100%;
+        }
+
+        .feature-row {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+      <link rel="stylesheet" href="enhancements.css" />
+  <link rel="stylesheet" href="af-theme.css">
+  <link rel="stylesheet" href="product-redesign.css">
+</head>
+  <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-left">
+          <span>📧 info@indiasteelind.com</span>
+          <span>📞 +91 22 4567 8900</span>
+        </div>
+        <div class="top-bar-right">
+          <a href="#">Get Quote</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <div class="logo-section">
+            <div class="logo-icon">ISI</div>
+            <div class="logo-text">
+              <h1>INDIA STEEL INDUSTRIES</h1>
+              <p>Quality Steel Solutions Since 1998</p>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="index.html#products" class="active">Products</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header><!-- Hero -->
+        <section class="isi-page-hero" style="--cat-bg:url('product-images/bg-hardware.jpg')"><div class="isi-page-hero-overlay"></div><div class="isi-page-hero-content"><span>PRODUCT RANGE</span><h1>Hardware &amp; Fasteners</h1><p>Industrial Hardware &amp; Fasteners</p></div></section><div class="breadcrumb"><div class="breadcrumb-nav"><a href="index.html">Home</a><span>›</span><span>Hardware &amp; Fasteners</span></div></div><main class="isi-category-page"><div class="isi-category-head"><div><span class="isi-kicker-line">PRODUCTS</span><h2>Industrial Hardware &amp; Fasteners</h2><p>Explore our industrial range with dedicated product pages for specifications, applications and enquiry support.</p></div><div class="isi-category-count"><strong>12</strong><span>PRODUCTS</span></div></div><div class="isi-category-grid"><article class="isi-cat-card"><a class="isi-cat-media" href="isi-hardware-fasteners-hex-bolts.html"><img src="https://lntsufin.com/storage/mediafiles/catalog/live/16282-338/original/16282-338_image_0.jpg" alt="Hex Bolts" referrerpolicy="no-referrer" loading="lazy"></a><div class="isi-cat-body"><span class="isi-cat-kicker">Hardware &amp; Fasteners</span><h3>Hex Bolts</h3><p>Hex Bolts is an industrial fastening or support component intended for secure mechanical assembly, fixing or pipe/structure support..</p><a class="isi-cat-read" href="isi-hardware-fasteners-hex-bolts.html">Read More <span>→</span></a></div></article><article class="isi-cat-card"><a class="isi-cat-media" href="isi-hardware-fasteners-hex-nuts.html"><img src="https://cpimg.tistatic.com/10638303/b/4/Hex-Nut..jpg" alt="Hex Nuts" referrerpolicy="no-referrer" loading="lazy"></a><div class="isi-cat-body"><span class="isi-cat-kicker">Hardware &amp; Fasteners</span><h3>Hex Nuts</h3><p>Hex Nuts is an industrial fastening or support component intended for secure mechanical assembly, fixing or pipe/structure support..</p><a class="isi-cat-read" href="isi-hardware-fasteners-hex-nuts.html">Read More <span>→</span></a></div></article><article class="isi-cat-card"><a class="isi-cat-media" href="isi-hardware-fasteners-plain-washers.html"><img src="https://loremflickr.com/1000/760/steel,industrial,Plain,Washers?lock=88557" alt="Plain Washers" referrerpolicy="no-referrer" loading="lazy"></a><div class="isi-cat-body"><span class="isi-cat-kicker">Hardware &amp; Fasteners</span><h3>Plain Washers</h3><p>Plain Washers is an industrial fastening or support component intended for secure mechanical assembly, fixing or pipe/structure support..</p><a class="isi-cat-read" href="isi-hardware-fasteners-plain-washers.html">Read More <span>→</span></a></div></article><article class="isi-cat-card"><a class="isi-cat-media" href="isi-hardware-fasteners-anchor-fasteners.html"><img src="https://www.ferry-international.com/wp-content/uploads/2016/07/through-bolt-anchor.jpg" alt="Anchor Fasteners" referrerpolicy="no-referrer" loading="lazy"></a><div class="isi-cat-body"><span class="isi-cat-kicker">Hardware &amp; Fasteners</span><h3>Anchor Fasteners</h3><p>Anchor Fasteners is an industrial fastening or support component intended for secure mechanical assembly, fixing or pipe/structure support..</p><a class="isi-cat-read" href="isi-hardware-fasteners-anchor-fasteners.html">Read More <span>→</span></a></div></article><article class="isi-cat-card"><a class="isi-cat-media" href="isi-hardware-fasteners-u-bolts-clamps.html"><img src="https://tiimg.tistatic.com/fp/1/006/279/sturdiness-ss-pipe-clamp-621.jpg" alt="U-Bolts &amp; Clamps" referrerpolicy="no-referrer" loading="lazy"></a><div class="isi-cat-body"><span class="isi-cat-kicker">Hardware &amp; Fasteners</span><h3>U-Bolts &amp; Clamps</h3><p>U-Bolts &amp; Clamps is an industrial fastening or support component intended for secure mechanical assembly, fixing or pipe/structure support..</p><a class="isi-cat-read" href="isi-hardware-fasteners-u-bolts-clamps.html">Read More <span>→</span></a></div></article><article class="isi-cat-card"><a class="isi-cat-media" href="isi-hardware-fasteners-threaded-rods.html"><img src="https://buysupplies.in/cdn/shop/products/stainless-steel-threaded-rod-500x500_da872588-33fd-4522-9e49-87f8b7f004d5_1200x1200.jpg?v=1628932016" alt="Threaded Rods" referrerpolicy="no-referrer" loading="lazy"></a><div class="isi-cat-body"><span class="isi-cat-kicker">Hardware &amp; Fasteners</span><h3>Threaded Rods</h3><p>Threaded Rods is an industrial fastening or support component intended for secure mechanical assembly, fixing or pipe/structure support..</p><a class="isi-cat-read" href="isi-hardware-fasteners-threaded-rods.html">Read More <span>→</span></a></div></article><article class="isi-cat-card"><a class="isi-cat-media" href="isi-hardware-fasteners-blind-structural-rivets.html"><img src="https://loremflickr.com/1000/760/steel,industrial,Blind,Structural,Rivets?lock=85041" alt="Blind &amp; Structural Rivets" referrerpolicy="no-referrer" loading="lazy"></a><div class="isi-cat-body"><span class="isi-cat-kicker">Hardware &amp; Fasteners</span><h3>Blind &amp; Structural Rivets</h3><p>Blind &amp; Structural Rivets is an industrial fastening or support component intended for secure mechanical assembly, fixing or pipe/structure support..</p><a class="isi-cat-read" href="isi-hardware-fasteners-blind-structural-rivets.html">Read More <span>→</span></a></div></article><article class="isi-cat-card"><a class="isi-cat-media" href="isi-hardware-fasteners-gi-wire-mesh.html"><img src="https://loremflickr.com/1000/760/steel,industrial,GI,Wire,Mesh?lock=38862" alt="GI Wire Mesh" referrerpolicy="no-referrer" loading="lazy"></a><div class="isi-cat-body"><span class="isi-cat-kicker">Hardware &amp; Fasteners</span><h3>GI Wire Mesh</h3><p>GI Wire Mesh is an industrial fastening or support component intended for secure mechanical assembly, fixing or pipe/structure support..</p><a class="isi-cat-read" href="isi-hardware-fasteners-gi-wire-mesh.html">Read More <span>→</span></a></div></article><article class="isi-cat-card"><a class="isi-cat-media" href="isi-hardware-fasteners-chemical-anchors.html"><img src="https://s.alicdn.com/@sc04/kf/Hc5b7d10538b647ce95a34262474c9129h/High-Quality-M8-M10-Steel-Chemical-Anchor-Screw-Price-for-Non-Mud-Walls-Safety-Epoxy-Adhesive-for-Concrete-Fixing.jpg" alt="Chemical Anchors" referrerpolicy="no-referrer" loading="lazy"></a><div class="isi-cat-body"><span class="isi-cat-kicker">Hardware &amp; Fasteners</span><h3>Chemical Anchors</h3><p>Chemical Anchors is an industrial fastening or support component intended for secure mechanical assembly, fixing or pipe/structure support..</p><a class="isi-cat-read" href="isi-hardware-fasteners-chemical-anchors.html">Read More <span>→</span></a></div></article><article class="isi-cat-card"><a class="isi-cat-media" href="isi-hardware-fasteners-pipe-clamps.html"><img src="https://tiimg.tistatic.com/fp/1/006/279/sturdiness-ss-pipe-clamp-621.jpg" alt="Pipe Clamps" referrerpolicy="no-referrer" loading="lazy"></a><div class="isi-cat-body"><span class="isi-cat-kicker">Hardware &amp; Fasteners</span><h3>Pipe Clamps</h3><p>Pipe Clamps is an industrial fastening or support component intended for secure mechanical assembly, fixing or pipe/structure support..</p><a class="isi-cat-read" href="isi-hardware-fasteners-pipe-clamps.html">Read More <span>→</span></a></div></article><article class="isi-cat-card"><a class="isi-cat-media" href="isi-hardware-fasteners-machine-screws.html"><img src="https://tiimg.tistatic.com/fp/1/003/993/omni-machine-screws-281.jpg" alt="Machine Screws" referrerpolicy="no-referrer" loading="lazy"></a><div class="isi-cat-body"><span class="isi-cat-kicker">Hardware &amp; Fasteners</span><h3>Machine Screws</h3><p>Machine Screws is an industrial fastening or support component intended for secure mechanical assembly, fixing or pipe/structure support..</p><a class="isi-cat-read" href="isi-hardware-fasteners-machine-screws.html">Read More <span>→</span></a></div></article><article class="isi-cat-card"><a class="isi-cat-media" href="isi-hardware-fasteners-washers-accessories.html"><img src="https://loremflickr.com/1000/760/steel,industrial,Washers,Accessories?lock=40693" alt="Washers &amp; Accessories" referrerpolicy="no-referrer" loading="lazy"></a><div class="isi-cat-body"><span class="isi-cat-kicker">Hardware &amp; Fasteners</span><h3>Washers &amp; Accessories</h3><p>Washers &amp; Accessories is an industrial fastening or support component intended for secure mechanical assembly, fixing or pipe/structure support..</p><a class="isi-cat-read" href="isi-hardware-fasteners-washers-accessories.html">Read More <span>→</span></a></div></article></div></main><footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>About India Steel</h3>
+            <p>
+              Leading supplier of quality steel products in India. We provide
+              comprehensive steel solutions with international standard
+              compliance.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Service Categories</h3>
+            <ul>
+              <li><a href="#">Thread Cutting</a></li>
+              <li><a href="#">Welding Services</a></li>
+              <li><a href="#">Galvanizing</a></li>
+              <li><a href="#">Assembly & Spools</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Standards We Follow</h3>
+            <ul>
+              <li>ASTM Standards</li>
+              <li>API Specifications</li>
+              <li>IS Standards</li>
+              <li>BS Standards</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 India Steel Industries. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+</body></html>
