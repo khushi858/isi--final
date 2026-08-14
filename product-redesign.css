@@ -1,0 +1,115 @@
+
+/* ===== Product / catalogue redesign: graphite + white, no blue ===== */
+:root{--p-ink:#25292d;--p-graphite:#34383d;--p-grey:#70767c;--p-soft:#f3f4f5;--p-line:#dfe2e5;--p-black:#000;--p-red:#b21f2b}
+body{background:#fff!important;color:var(--p-ink)!important}
+body:has(.pd-section),body:has(.hero-carousel){background:#fff!important}
+body:has(.pd-section) .top-bar,body:has(.hero-carousel) .top-bar{background:#2f3337!important;border-bottom:0!important}
+body:has(.pd-section) header,body:has(.hero-carousel) header{background:#fff!important;border-bottom:1px solid var(--p-line)!important;box-shadow:0 4px 18px rgba(20,24,28,.06)!important}
+body:has(.pd-section) nav ul li a,body:has(.hero-carousel) nav ul li a{background:transparent!important;color:var(--p-ink)!important}
+body:has(.pd-section) nav ul li a:hover,body:has(.hero-carousel) nav ul li a:hover,body:has(.pd-section) nav ul li a.active,body:has(.hero-carousel) nav ul li a.active{background:#eef0f2!important;color:#202428!important}
+/* no blue anywhere on product pages */
+body:has(.pd-section) a,body:has(.hero-carousel) a{--blue:#70767c!important;--blue-deep:#25292d!important;--blue-light:#a4a9ae!important}
+.breadcrumb{background:#f1f2f3!important;border:0!important;padding:12px 0!important}
+.breadcrumb-nav{max-width:1180px!important;margin:auto!important;padding:0 20px!important;color:#73787e!important}
+.breadcrumb-nav a{color:#5e646a!important}.breadcrumb-nav span{color:#8a9095!important}
+/* Category hero */
+.hero-carousel{height:330px!important;min-height:330px!important;position:relative!important;overflow:hidden!important;background:#30353a!important}
+.hero-carousel .hc-slide,.hero-carousel .hc-slide.active{position:absolute!important;inset:0!important;display:block!important;opacity:1!important}
+.hero-carousel .hc-slide img{width:100%!important;height:100%!important;object-fit:cover!important;filter:brightness(.56) saturate(.78)!important}
+.hero-carousel .hc-content{position:absolute!important;inset:0!important;display:flex!important;flex-direction:column!important;justify-content:center!important;align-items:center!important;text-align:center!important;padding:30px!important;z-index:3!important;color:#fff!important}
+.hero-carousel .hc-content:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.28),rgba(0,0,0,.18),rgba(0,0,0,.34));z-index:-1}
+.hero-carousel .hc-eyebrow{font-size:12px!important;letter-spacing:.18em!important;text-transform:uppercase!important;color:#e4e6e8!important;margin-bottom:10px!important}
+.hero-carousel h2{font-size:clamp(38px,5vw,62px)!important;color:#fff!important;margin:0 0 10px!important;font-weight:800!important;text-shadow:0 3px 20px rgba(0,0,0,.28)!important}
+.hero-carousel .hc-sub{max-width:760px!important;color:#e6e8ea!important;font-size:16px!important}
+.hero-carousel .hc-cta{display:flex!important;gap:12px!important;margin-top:20px!important}.hero-carousel .hc-btn{padding:11px 20px!important;border-radius:4px!important;border:1px solid rgba(255,255,255,.45)!important;text-decoration:none!important;font-weight:700!important}.hero-carousel .hc-btn.primary{background:#fff!important;color:#2e3338!important}.hero-carousel .hc-btn.ghost{background:transparent!important;color:#fff!important}
+/* Category body */
+.pd-section{background:#fff!important;padding:60px 0 80px!important}
+.pd-section>.container{max-width:1180px!important}
+.pf-intro{max-width:850px!important;color:#666c72!important;font-size:15px!important;line-height:1.8!important;margin:0 auto 38px!important}
+.pd-title{font-size:30px!important;color:#25292d!important;margin-bottom:34px!important;text-align:center!important}.pd-title:after{content:"";display:block;width:48px;height:3px;background:#747a80;margin:13px auto 0}
+.pf-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:24px!important;max-width:1180px!important;margin:0 auto!important}
+.pf-card{border:1px solid #e1e4e7!important;border-radius:2px!important;background:#fff!important;padding:0 0 22px!important;box-shadow:0 7px 24px rgba(28,32,36,.06)!important;overflow:hidden!important;transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease!important}
+.pf-card:hover{border-color:#8b9095!important;box-shadow:0 14px 34px rgba(28,32,36,.12)!important;transform:translateY(-5px)!important}
+.pf-card img{width:100%!important;height:205px!important;object-fit:contain!important;background:#f3f4f5!important;border-radius:0!important;margin:0 0 16px!important;padding:12px!important}
+.pf-card h3{font-size:16px!important;line-height:1.35!important;color:#2e3338!important;min-height:44px!important;margin:4px 18px 14px!important}
+.pf-card .pf-badge{font-size:10px!important;color:#747a80!important;background:#eef0f2!important;border-radius:2px!important;padding:4px 9px!important;margin:0 18px 8px!important}
+.pf-card .pf-readmore{background:#3b4045!important;color:#fff!important;border-radius:3px!important;padding:10px 22px!important;font-size:12px!important;margin-top:0!important}.pf-card .pf-readmore:hover{background:#1f2327!important;color:#fff!important}
+/* Dynamic India Steel Industries range */
+.af-range{background:#f6f7f8!important;border-top:1px solid #e3e5e7!important;padding:70px 0 85px!important}
+.af-range-head,.af-toolbar,.af-grid{width:min(1180px,92%)!important}
+.af-range-head{margin:0 auto 28px!important}.af-range h2{color:#25292d!important;font-size:38px!important}.af-eyebrow{color:#6d7379!important}.af-eyebrow:before{background:#737980!important}.af-range-head p{color:#73787e!important}.af-count{color:#2f3439!important;border-radius:3px!important}.af-search{border-radius:3px!important}.af-search:focus{border-color:#737980!important;box-shadow:0 0 0 3px rgba(70,75,80,.08)!important}.af-source{color:#7a8086!important}
+.af-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:22px!important}
+.af-product-card{border-radius:2px!important;border:1px solid #dfe2e5!important;box-shadow:0 7px 24px rgba(28,32,36,.055)!important}.af-product-card:hover{border-color:#7a8086!important;box-shadow:0 16px 34px rgba(28,32,36,.12)!important;transform:translateY(-5px)!important}.af-product-link{display:block;color:inherit;text-decoration:none}.af-product-media{height:210px!important;background:#f0f2f3!important}.af-product-media img{object-fit:contain!important;padding:16px!important;filter:none!important}.af-product-index{background:#34393e!important;border-radius:2px!important}.af-product-body{padding:18px!important}.af-product-kicker{color:#777d83!important}.af-product-body h3{font-size:17px!important;color:#2b3035!important}.af-product-body p{color:#6f757b!important;min-height:63px!important}.af-read-more{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;background:#3b4045;color:#fff;font-size:12px;font-weight:700;border-radius:3px}.af-product-card:hover .af-read-more{background:#202428}
+/* Detail pages: screenshot-like hero, then breadcrumb, then two-column content */
+.product-hero{height:300px;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;background:#30353a url('steel-pipes-banner.png') center/cover no-repeat}
+.product-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.55),rgba(0,0,0,.25),rgba(0,0,0,.55))}.product-hero-content{position:relative;z-index:1;color:#fff;padding:20px}.product-hero h1{font-size:clamp(34px,5vw,58px);line-height:1.08;margin:0;font-weight:800;text-shadow:0 3px 20px rgba(0,0,0,.3)}.product-hero p{margin:10px auto 0;color:#e6e8ea;max-width:780px}
+body:has(.product-hero) .breadcrumb{margin:0!important}.pd-layout{grid-template-columns:minmax(0,1fr) 290px!important;gap:48px!important}.pd-main{background:#fff!important}.pd-image-box{width:min(340px,100%)!important;margin:0 auto 32px!important;border:1px solid #dfe2e5!important;border-radius:2px!important;background:#f2f3f4!important;padding:18px!important;box-shadow:0 10px 28px rgba(25,29,33,.08)!important}.pd-image-box img{height:250px!important;object-fit:contain!important}.pd-main h3{font-size:21px!important;color:#34393e!important;margin:30px 0 13px!important;border-left:3px solid #777d83!important;padding-left:12px!important}.pd-main p{color:#5e646a!important;font-size:15px!important;line-height:1.85!important}.pd-specs-list li,.pd-apps-list li{color:#5f656b!important}.pd-specs-list li::before,.pd-apps-list li::before{color:#777d83!important}.pd-sidebar{top:105px!important}.pd-sidebar-title{color:#34393e!important;border-bottom:2px solid #8a9096!important}.pd-sidebar-links{gap:5px!important}.pd-sidebar-links a{background:#eef0f2!important;color:#34393e!important;border-left:3px solid #6d7379!important;border-radius:2px!important;padding:10px 12px!important}.pd-sidebar-links a:hover,.pd-sidebar-links a.current{background:#34393e!important;color:#fff!important;border-left-color:#34393e!important}.pd-cta-primary{background:#34393e!important;color:#fff!important}.pd-cta-primary:hover{background:#1f2327!important}.pd-cta-secondary{color:#34393e!important;border-color:#9ca1a6!important}.pd-cta-secondary:hover{background:#eef0f2!important}
+/* Footer on every page */
+footer{width:100%!important;background:#000!important;color:#c9c9c9!important;margin-top:0!important;border-top:1px solid #171717!important}footer .footer-top{padding-top:54px!important;padding-bottom:42px!important}footer .footer-col h5,footer .footer-col h3{color:#fff!important}footer .footer-col a,footer .footer-col p,footer .footer-bottom{color:#aeb1b4!important}footer .footer-col a:hover{color:#fff!important}footer .footer-bottom{border-top:1px solid #222!important}
+@media(max-width:1050px){.pf-grid,.af-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}}@media(max-width:760px){.hero-carousel{height:280px!important;min-height:280px!important}.pf-grid,.af-grid{grid-template-columns:1fr 1fr!important}.pd-layout{grid-template-columns:1fr!important}.product-hero{height:250px}.product-hero h1{font-size:36px!important}}@media(max-width:520px){.pf-grid,.af-grid{grid-template-columns:1fr!important}.pf-card img{height:220px!important}.hero-carousel .hc-sub{font-size:14px!important}.hero-carousel .hc-cta{display:none!important}}
+
+/* ===== India Steel Industries catalogue refinement ===== */
+.af-range{background:#fff!important;border-top:0!important;padding:28px 0 82px!important}
+.af-range-head,.af-toolbar{display:none!important}
+.af-grid{width:min(1180px,92%)!important;margin:0 auto!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:22px!important}
+.af-product-card{background:#fff!important;border:1px solid #dfe2e5!important;border-radius:3px!important;overflow:hidden!important;box-shadow:0 8px 22px rgba(32,36,40,.06)!important;transform:none!important}
+.af-product-card:hover{border-color:#a2a7ac!important;box-shadow:0 14px 32px rgba(32,36,40,.13)!important;transform:translateY(-4px)!important}
+.af-product-media{height:220px!important;position:relative!important;display:flex!important;align-items:center!important;justify-content:center!important;overflow:hidden!important;background:#e9ebed var(--af-bg) center/cover no-repeat!important}
+.af-product-media:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(245,246,247,.30),rgba(220,223,225,.58))!important;z-index:0!important}
+.af-product-media img{position:relative!important;z-index:1!important;width:82%!important;height:82%!important;object-fit:contain!important;padding:12px!important;filter:drop-shadow(0 10px 10px rgba(25,29,33,.15))!important;background:rgba(255,255,255,.42)!important;border-radius:4px!important}
+.af-product-index{z-index:2!important;top:14px!important;left:14px!important;background:#34383d!important;color:#fff!important;border-radius:2px!important}
+.af-product-body{padding:18px 18px 20px!important;background:#fff!important}
+.af-product-kicker{color:#7a8085!important;letter-spacing:.12em!important}
+.af-product-body h3{color:#25292d!important;font-size:17px!important;margin:8px 0 9px!important}
+.af-product-body p{color:#6a7075!important;min-height:64px!important;line-height:1.6!important}
+.af-read-more{background:#34383d!important;color:#fff!important;border-radius:2px!important;padding:10px 18px!important;margin-top:8px!important}
+.af-product-card:hover .af-read-more{background:#171a1d!important}
+/* Category-specific product-detail heroes */
+.product-hero{background-position:center!important;background-size:cover!important}
+.product-hero[data-af-type="fittings"]{background-image:linear-gradient(90deg,rgba(20,24,28,.62),rgba(20,24,28,.24),rgba(20,24,28,.62)),url('product-images/bg-fittings.jpg')!important}
+.product-hero[data-af-type="flanges"]{background-image:linear-gradient(90deg,rgba(20,24,28,.62),rgba(20,24,28,.24),rgba(20,24,28,.62)),url('product-images/bg-flanges.jpg')!important}
+.product-hero[data-af-type="valves"]{background-image:linear-gradient(90deg,rgba(20,24,28,.62),rgba(20,24,28,.24),rgba(20,24,28,.62)),url('product-images/bg-valves.jpg')!important}
+.product-hero[data-af-type="pipes"]{background-image:linear-gradient(90deg,rgba(20,24,28,.62),rgba(20,24,28,.24),rgba(20,24,28,.62)),url('product-images/bg-pipes.jpg')!important}
+footer{background:#000!important;width:100%!important;color:#c9c9c9!important}
+footer .container{background:#000!important}
+@media(max-width:1050px){.af-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+@media(max-width:760px){.af-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:520px){.af-grid{grid-template-columns:1fr!important}}
+
+/* ===== Six category pages: clean industrial catalogue layout ===== */
+.isi-page-hero{height:330px;position:relative;background:var(--cat-bg) center/cover no-repeat;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.isi-page-hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,18,21,.72),rgba(15,18,21,.28),rgba(15,18,21,.72))}
+.isi-page-hero-content{position:relative;z-index:1;text-align:center;color:#fff;padding:20px}.isi-page-hero-content>span{font-size:12px;letter-spacing:.2em;color:#e4e6e8}.isi-page-hero-content h1{font-size:clamp(38px,5vw,62px);line-height:1.08;margin:10px 0 8px;font-weight:800;text-shadow:0 3px 20px rgba(0,0,0,.28)}.isi-page-hero-content p{font-size:16px;color:#e3e6e8;margin:0}
+.isi-category-page{background:#fff;padding:58px 0 88px}.isi-category-head{width:min(1180px,92%);margin:0 auto 30px;display:flex;justify-content:space-between;gap:30px;align-items:flex-end}.isi-kicker-line{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:800;letter-spacing:.18em;color:#687077}.isi-kicker-line:before{content:"";width:30px;height:2px;background:#697077}.isi-category-head h2{font-size:38px;line-height:1.15;color:#25292d;margin:10px 0}.isi-category-head p{max-width:760px;color:#6d7379;margin:0;font-size:15px}.isi-category-count{min-width:130px;padding:18px 20px;border:1px solid #dfe2e5;background:#f5f6f7;text-align:center}.isi-category-count strong{display:block;font-size:34px;color:#2d3237;line-height:1}.isi-category-count span{display:block;margin-top:8px;font-size:10px;font-weight:800;letter-spacing:.16em;color:#747a80}
+.isi-category-grid{width:min(1180px,92%);margin:0 auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}.isi-cat-card{border:1px solid #dfe2e5;background:#fff;box-shadow:0 8px 22px rgba(32,36,40,.06);transition:.22s ease;overflow:hidden}.isi-cat-card:hover{transform:translateY(-5px);border-color:#9aa0a5;box-shadow:0 15px 34px rgba(32,36,40,.13)}.isi-cat-media{display:block;background:#edf0f2;height:215px;position:relative}.isi-cat-media:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(220,223,225,.24));pointer-events:none}.isi-cat-media img{width:100%;height:100%;object-fit:contain;padding:20px}.isi-cat-body{padding:18px 18px 20px}.isi-cat-kicker{font-size:10px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:#7a8086}.isi-cat-body h3{font-size:18px;line-height:1.3;color:#282d32;margin:8px 0 9px}.isi-cat-body p{font-size:14px;line-height:1.65;color:#6b7177;min-height:68px;margin:0 0 16px}.isi-cat-read{display:inline-flex;align-items:center;gap:8px;padding:10px 17px;background:#34383d;color:#fff!important;text-decoration:none;font-size:12px;font-weight:800;border-radius:2px}.isi-cat-read:hover{background:#171a1d}
+@media(max-width:1050px){.isi-category-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.isi-category-head h2{font-size:32px}}@media(max-width:760px){.isi-page-hero{height:280px}.isi-category-head{align-items:flex-start;flex-direction:column}.isi-category-count{display:none}.isi-category-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:520px){.isi-category-grid{grid-template-columns:1fr}.isi-page-hero-content h1{font-size:38px}.isi-category-page{padding-top:42px}}
+
+
+/* ===== Global India Steel Industries footer ===== */
+footer{position:relative!important;width:100%!important;background:#050505!important;color:#cfd2d5!important;margin:0!important;padding:0!important;border-top:1px solid #1d1d1d!important;font-family:'Barlow',Arial,sans-serif!important;box-sizing:border-box!important}
+footer *{box-sizing:border-box!important}
+footer .container{width:min(1180px,92%)!important;max-width:1180px!important;margin:0 auto!important}
+footer .footer-top{display:grid!important;grid-template-columns:1.55fr 1fr 1fr 1fr!important;gap:48px!important;padding:58px 0 46px!important;align-items:start!important}
+footer .footer-brand{min-width:0!important}
+footer .footer-brand .logo{display:flex!important;align-items:center!important;gap:14px!important;margin-bottom:18px!important}
+footer .footer-brand .logo-mark{width:58px!important;height:58px!important;display:flex!important;align-items:center!important;justify-content:center!important;background:#d7192e!important;color:#fff!important;border-radius:12px!important;font:800 25px/1 'Barlow Condensed',Arial,sans-serif!important;box-shadow:0 8px 22px rgba(215,25,46,.24)!important}
+footer .footer-brand .logo-text{display:flex!important;flex-direction:column!important;gap:2px!important}
+footer .footer-brand .logo-text .full{display:block!important;color:#fff!important;font:800 25px/1 'Barlow Condensed',Arial,sans-serif!important;letter-spacing:.02em!important}
+footer .footer-brand .logo-text .sub{display:block!important;color:#8f9499!important;font:600 11px/1.2 'Barlow',Arial,sans-serif!important;letter-spacing:.12em!important;text-transform:uppercase!important}
+footer .footer-brand>p{max-width:430px!important;color:#9ea3a8!important;font-size:14px!important;line-height:1.75!important;margin:0!important}
+footer .footer-col{min-width:0!important}
+footer .footer-col h3,footer .footer-col h5{margin:0 0 17px!important;color:#fff!important;font:700 13px/1.2 'Barlow Condensed',Arial,sans-serif!important;letter-spacing:.13em!important;text-transform:uppercase!important}
+footer .footer-col h5:after,footer .footer-col h3:after{content:""!important;display:block!important;width:30px!important;height:2px!important;background:#d7192e!important;margin-top:9px!important}
+footer .footer-col ul{list-style:none!important;padding:0!important;margin:0!important}
+footer .footer-col ul li{margin:0 0 10px!important;padding:0!important}
+footer .footer-col ul li a{color:#aeb3b7!important;text-decoration:none!important;font-size:14px!important;line-height:1.5!important;transition:color .2s ease,padding-left .2s ease!important}
+footer .footer-col ul li a:hover{color:#fff!important;padding-left:4px!important}
+footer .footer-bottom{display:flex!important;justify-content:space-between!important;gap:20px!important;align-items:center!important;border-top:1px solid #202020!important;padding:18px 0 20px!important;color:#777d82!important;font-size:12px!important;line-height:1.5!important}
+footer .footer-bottom span{display:inline-block!important}
+footer .footer-bottom a{color:#92979c!important;text-decoration:none!important}
+footer .footer-bottom a:hover{color:#fff!important}
+@media(max-width:900px){footer .footer-top{grid-template-columns:1fr 1fr!important;gap:36px!important}}
+@media(max-width:560px){footer .footer-top{grid-template-columns:1fr!important;padding:44px 0 34px!important}footer .footer-bottom{flex-direction:column!important;align-items:flex-start!important}}
+
+body{font-family:'Barlow',Arial,sans-serif!important;margin:0!important;}
+h1,h2,h3,h4,h5,h6{font-family:'Barlow Condensed',Arial,sans-serif;}
